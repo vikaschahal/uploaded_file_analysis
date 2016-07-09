@@ -1,0 +1,23 @@
+- if @file_reading
+  %h1 File Details
+    
+  %table
+    %tr 
+      %th 
+        Total line
+      %th 
+        Total words
+      %th 
+        Total characters
+          
+    %tr 
+      %td 
+        = @file_details[:lines]
+      %td 
+        = @file_details[:words]
+      %td 
+        = @file_details[:characters]
+-else
+  %h1 There was some error during File Parsing    
+          
+=link_to("Home page",root_url)    
